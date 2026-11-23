@@ -1,13 +1,19 @@
 #include <stdio.h>
 
-/* A tiny example program with a few randomly chosen values. */
+// Define a constant macro.
+#define APP_NAME "Simple Example"
+#define SQUARE(value) ((value) * (value))
+
+/*
+ * This program demonstrates basic preprocessor macros,
+ * a single-line comment, and a multi-line comment.
+ */
 int main(void)
 {
-	int number = 7; // Store a small number.
-	int doubled = number * 2;
+	int number = 5;
 
-	/* Print the original value and its double. */
-	printf("%d doubled is %d\n", number, doubled);
+	printf("%s\n", APP_NAME);
+	printf("The square of %d is %d.\n", number, SQUARE(number));
 
-	return 0; // Finish successfully.
+	return 0;
 }

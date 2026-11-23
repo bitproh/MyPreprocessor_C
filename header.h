@@ -6,3 +6,4 @@
 
 void comment_removal(FILE *, FILE *);
 void macro_handler(FILE *, FILE *);
+void file_inclusion(FILE *, FILE *);

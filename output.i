@@ -1,13 +1,17 @@
 #include <stdio.h>
 
 
+
+
+
+
+
 int main(void)
 {
-	int number = 7; 
-	int doubled = number * 2;
+	int number = 5;
 
-	
-	printf("%d doubled is %d\n", number, doubled);
+	printf("%s\n", "Simple Example");
+	printf("The square of %d is %d.\n", number, SQUARE(number));
 
-	return 0; 
+	return 0;
 }
