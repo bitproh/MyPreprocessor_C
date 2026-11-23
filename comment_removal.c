@@ -18,7 +18,7 @@ void comment_removal(FILE *input, FILE *output){
             }
             else if(next == '*'){
                 //multiline comment, searching for next '*/'
-                while((ch=getc(input)) != -1){
+                while((ch=fgetc(input)) != -1){
                     if(ch=='\n'){
                         fputc('\n',output);
                     }
