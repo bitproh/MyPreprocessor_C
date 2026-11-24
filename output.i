@@ -1,17 +1,16 @@
-#include <stdio.h>
+
+
+int add_bonus(int x) {
+    return x + 5;
+}
 
 
 
+int main(void) {
+    int count = 10; 
+    int total = add_bonus(count);
 
-
-
-
-int main(void)
-{
-	int number = 5;
-
-	printf("%s\n", "Simple Example");
-	printf("The square of %d is %d.\n", number, SQUARE(number));
-
-	return 0;
+    
+    printf("%s: %d\n", "Hello from header", total);
+    return 0;
 }

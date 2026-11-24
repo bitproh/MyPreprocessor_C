@@ -1,19 +1,16 @@
-#include <stdio.h>
+// Single-line comment before include
+#include "sample_header.h"
 
-// Define a constant macro.
-#define APP_NAME "Simple Example"
-#define SQUARE(value) ((value) * (value))
+/* Multi-line comment
+   spanning multiple lines */
+#define MAX_COUNT 10
+#define MAX_VALUE 100
 
-/*
- * This program demonstrates basic preprocessor macros,
- * a single-line comment, and a multi-line comment.
- */
-int main(void)
-{
-	int number = 5;
+int main(void) {
+    int count = MAX_COUNT; // should expand MAX_COUNT, not touch MAX_VALUE
+    int total = add_bonus(count);
 
-	printf("%s\n", APP_NAME);
-	printf("The square of %d is %d.\n", number, SQUARE(number));
-
-	return 0;
+    // Simple print call to verify expansion
+    printf("%s: %d\n", GREETING, total);
+    return 0;
 }
